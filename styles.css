@@ -1,0 +1,20 @@
+/* Use grid for main layout. Two columns: Nav bar and Content */
+
+.nav ul {
+    list-style: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 5fr;
+    border: 1px solid;
+}
+
+.container > div {
+    border: 1px solid;
+}
+
+.sidebar {
+    grid-row: 1 / 3;
+}
