@@ -1,8 +1,8 @@
 /* Use grid for main layout. Two columns: Nav bar and Content */
 
-/* div {
-    border: 1px solid;
-} */
+div {
+    /* border: 1px solid; */
+}
 
 .nav ul {
     list-style: none;
@@ -16,60 +16,179 @@
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 6fr;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 .container > div {
-    border: 1px solid;
+    /* border: 1px solid; */
+}
+
+#profile-image-big img {
+    height: 52px;
+    width: 52px;
+    border-radius: 50%;
 }
 
 .sidebar {
     grid-row: 1 / 3;
+    background-color: #0ea5e9;
+    color: white;
+
+    display: grid;
+    /* grid-template-columns: 1fr;
+    grid-template-rows: 1fr; */
+    /* grid-auto-flow: column; */
 }
+
+.sidebar li img {
+    height: 26px;
+    width: auto;
+}
+
+.sidebar li {
+    display: flex;
+    align-items: center;
+    /* font-weight: bold; */
+    font-size: 20px;
+}
+
+.sidebar ul {
+    padding-right: 40px;
+    margin-left: -20px;
+}
+
+#main-logo {
+    font-size: 36px;
+}
+
+#main-logo img {
+    height: 42px;
+    width: auto;
+}
+
+
+.nav h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logos {
+    padding-right: 20px;
+}
+
+
+/* .logo {
+    display: flex;
+    align-items:  center;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 40px;
+}
+
+.logo img {
+    flex: 1;
+    height: 50px;
+    width: auto;
+}
+
+.logo h1 {
+    flex: 1;
+} */
+
+
 
 .header {
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
-
+    display: grid;
+    grid-template-rows: 1fr 2fr;
 }
 
 .header-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* justify-content: space-between;
+    align-items: flex-end; */
     padding-top: 20px;
 }
 
 .profile {
     display: flex;
+    align-items: center;
 }
 
 .profile * {
-    padding-right: 10px;
+    margin-right: 15px;
 }
 
 .project-btns {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
     
 }
 
+.welcome {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.welcome #welcome-name {
+    font-size: 32px;
+}
+
+
+
 .project-btns * {
-    padding-right: 10px;
+    margin-right: 20px;
+    border-radius: 15%;
+    width: 100px;
+    height: 30px;
+    background-color: #0ea5e9;
+    
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-btns {
+    
 }
 
 .searchbar {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+input {
+    background-color: #e2e8f0;
 }
 
 .searchbar-left {
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchbar-left input {
+    display: flex;
+    flex:auto;
+    border-radius: 10px;
 }
 
 .searchbar-right {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .searchbar-right * {
@@ -80,14 +199,110 @@
     padding-right: 10px;
 }
 
+.search-logo img {
+    height: 24px;
+    width: auto;
+    margin-right: -10px;
+}
+
 .main-content {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    padding-top: 30px;
+    grid-template-rows: 0.5fr 2fr 2fr;
     padding-left: 20px;
     /* padding-right: 20px; */
+    background-color: #e2e8f0;
+    gap: 10px;
 }
 
 .your-projects {
-    grid-row: span 2;
+    display: grid;
+    grid-row: 2/4;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
 }
+
+#projects {
+    display: flex;
+    align-items: flex-end;
+    font-size: 20px;
+    
+}
+
+/* .announcements-trending {
+    grid-row: 1/-1;
+    grid-column: 2/3; */
+    /* display: grid;
+
+    grid-template-rows: repeat(4, 1fr); */
+
+/* } */
+
+.announcements {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    display: flex;
+    align-items: flex-end;
+    font-size: 20px;
+    /* display: grid;
+    grid-template-rows: 1fr 3fr;
+    align-content: end; */
+}
+
+/* .announcements-info {
+    display: grid;
+    align-items: start;
+    grid-row: 2/3;;
+} */
+  
+
+/* <!-- HTML !-->
+<button class="button-18" role="button">Button 18</button>
+
+/* CSS */
+/* .button-18 {
+    align-items: center;
+    background-color: #0A66C2;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+  }
+  
+  .button-18:hover,
+  .button-18:focus { 
+    background-color: #16437E;
+    color: #ffffff;
+  }
+  
+  .button-18:active {
+    background: #09223b;
+    color: rgb(255, 255, 255, .7);
+  }
+  
+  .button-18:disabled { 
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
+  } */ */
