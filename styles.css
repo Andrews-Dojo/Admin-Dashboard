@@ -228,6 +228,27 @@ input {
     border-radius: 10px;
 }
 
+.single-project {
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    padding: 20px;
+}
+
+/* .single-project * {
+    border: 1px solid;
+} */
+
+.single-project-btns {
+    display: flex;
+    justify-content: flex-end;
+    height: 30px;
+    width: auto;
+}
+
+.single-project-btns * {
+    padding-left: 20px;
+}
+
 #projects {
     display: flex;
     align-items: flex-end;
